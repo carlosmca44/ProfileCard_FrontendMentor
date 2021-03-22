@@ -1,0 +1,132 @@
+html, body {
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    overflow:hidden;
+}
+
+.attribution { font-size: 11px; text-align: center; bottom: 0; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 97vh;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card-container {
+    width: 350px;
+    height: max-content;
+    min-width: 300px;
+    display: inherit;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px hsl(0, 0%, 47%);
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: white;
+    z-index: 10;
+}
+
+.headspace {
+    background-image: url("./images/bg-pattern-card.svg");
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.personal_data {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.headers {
+    font-weight: bold;
+}
+
+.avatar {
+    width: 6rem;
+    border-radius: 50%;
+    border: 5px white solid;
+    margin-top: -60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: #d4d4d4;
+}
+
+.stadistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stadistics-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.secondary_color {
+    color: hsl(0, 0%, 59%);
+    font-weight: normal;
+}
+
+.bg-pattern-top {
+    max-width: 100%;
+    height: auto;
+    position: fixed;
+    top: -650px;
+    left: -130px;
+    z-index: 0;
+}
+
+.bg-pattern-bottom {
+    max-width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: -650px;
+    right: -200px;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 376px) {
+    .bg-pattern-bottom {
+        min-width: 130%;
+        bottom: -250px;
+        right: -250px;
+    }
+
+    .bg-pattern-top {
+        min-width: 130%;
+        top: -250px;
+        left: -300px;
+        z-index: 0;
+    }
+}
+
+.subheaders {
+    font-size: 14px;
+    color: hsl(0, 0%, 59%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
